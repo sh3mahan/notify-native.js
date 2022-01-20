@@ -25,7 +25,7 @@ function Notify(o) {
 		};
 				notifyContainer.appendChild(alerts);
 		if (sound) {
-			const audio = new Audio('../sound/notification.mp3');
+			const audio = new Audio('../assets/sound/notification.mp3');
 					audio.play();
 		}
 		setTimeout(function () {
