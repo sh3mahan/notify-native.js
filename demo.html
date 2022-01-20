@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Notify Native.js</title>
+	<link rel="stylesheet" href="style/css/main.min.css">
+</head>
+<body>
+	<button class="btnLaunch1">Info with content</button>
+<button class="btnLaunch2">Success with content</button>
+<button class="btnLaunch3">Danger with sound</button>
+<button class="btnLaunch4">Warning</button>
+<br>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, impedit? Nam corrupti vel pariatur voluptatibus nesciunt ut repudiandae debitis? Temporibus porro libero et hic. Quibusdam aperiam accusamus vitae aliquam laborum?</p>
+<p>Quia suscipit eveniet, reprehenderit, minima nulla, commodi pariatur rem ipsum totam optio illum labore eius? Sapiente ducimus, cum consectetur corrupti, quis, iste quod in doloremque iure voluptatum neque tenetur placeat.</p>
+<p>Tempore non ipsam distinctio molestiae quam error consectetur? Possimus fuga odit debitis quasi vitae. Quasi ad cum, veritatis quae, suscipit dolorum commodi vel optio facere officia quidem odio veniam magnam?</p>
+<p>Corporis nam beatae labore eum error, ex veritatis, debitis et aut autem voluptatibus quae laudantium adipisci quasi quidem! Maiores ex molestias ab, quos aut natus placeat voluptas eum tempore delectus?</p>
+<p>Odit sit voluptatum sint officia vero, repudiandae adipisci veritatis consequatur. Autem explicabo at distinctio est? Officia numquam similique iusto exercitationem, quas earum saepe dolores quaerat alias commodi laboriosam? Nihil, eaque.</p>
+<p>Placeat repellat ipsam eius eaque ea optio praesentium? Placeat qui quas optio iste, velit nemo explicabo? Rerum delectus explicabo et sed suscipit quibusdam rem inventore consequatur assumenda, enim mollitia iure.</p>
+<p>Quod eveniet adipisci soluta inventore eius nostrum commodi, voluptates necessitatibus voluptatibus pariatur animi minus laboriosam natus illum facere consequuntur ratione, iure explicabo recusandae molestias. Rerum aliquid illum aliquam magni dignissimos?</p>
+<p>Voluptate at nostrum doloremque iure ullam delectus aut aliquam, consectetur aliquid! Sequi earum culpa necessitatibus. Voluptatem sunt dolorem nihil sequi et provident, ratione aspernatur nobis ducimus tempore atque culpa modi?</p>
+<p>Quia possimus minima inventore nihil perferendis consequuntur excepturi dolor fugiat asperiores animi, vitae iusto magnam aspernatur eligendi cumque nulla aliquam atque officiis velit ipsam quaerat optio dolore ullam. Iste, hic.</p>
+<p>A doloribus delectus eum doloremque qui nihil harum! Ab quaerat ullam saepe unde animi nostrum, doloremque expedita sit, quis maiores consequuntur natus iure cupiditate itaque dolor, sunt nobis perferendis repellat!</p>
+<p>Recusandae vel, beatae dicta nulla ipsa quia qui atque, aut, consectetur nobis sed blanditiis illo voluptate aperiam libero. Id voluptate quam beatae nostrum quibusdam assumenda laboriosam quo vitae necessitatibus asperiores.</p>
+<p>Hic voluptates amet iusto, unde distinctio reiciendis id illum, non asperiores et praesentium vitae ad facilis ipsam aliquid, magnam ipsa maiores quasi voluptatem repellendus quas. Aliquid excepturi ad sunt nam?</p>
+<p>Atque porro, similique dignissimos dolores velit repellendus doloremque nobis inventore optio a, nisi, impedit autem molestias cumque maiores non corporis modi officiis. At, facilis. Nam est quo molestias porro itaque.</p>
+<p>Consequuntur aliquam fuga nemo molestiae autem nisi consequatur ut. Assumenda nostrum nemo excepturi. Deserunt error, eius veritatis quis labore odit corporis, reprehenderit, dolorem sit dicta atque blanditiis culpa voluptatum aliquam.</p>
+<p>Ipsam illum itaque, corporis fugit ipsum perspiciatis ab eos incidunt odio doloribus velit autem iusto facere, aliquid vero magni ullam officiis explicabo. Officia consectetur est eius. Accusamus aliquam suscipit est!</p>
+<script src="/assets/script/notify.js">	</script>
+<script>
+	// initialization
+	// const notify = new Notify({
+	// 	corner: "top_right", // Select the angle of appearance of notifications, e.g. "top_left" or "bottom_right" (default: top_right)
+	// 	delay: 5000, // Set the delay in milliseconds (default: 5000)
+	// 	maxElem: 12 // Set the maximum number of notifications on the screen (default: 10)
+	// });
+	
+	const notify = new Notify();
+	// adding handlers to buttons and notification rendering
+const noty_1 = document.querySelector(".btnLaunch1");
+noty_1.addEventListener("click", () => {
+	notify.render({
+		head: "Info",
+		content: "A simple info alert—check it out!"
+	});
+});
+const noty_2 = document.querySelector(".btnLaunch2");
+noty_2.addEventListener("click", () => {
+	notify.render({
+		style: "success",
+		head: "Success",
+		content: "A simple success alert—check it out!"
+	});
+});
+const noty_3 = document.querySelector(".btnLaunch3");
+noty_3.addEventListener("click", () => {
+	notify.render({
+		style: "danger",
+		head: "Danger",
+		content: "A simple warning alert—check it out!",
+		sound: true
+	});
+});
+const noty_4 = document.querySelector(".btnLaunch4");
+noty_4.addEventListener("click", () => {
+	notify.render({style: "warning"});
+});
+// 	setTimeout(() => {
+// 		document.querySelector('#notifyContainer').click();
+// 	}, 100);
+// 	document.querySelector('#notifyContainer').addEventListener('click', function() {
+//   setTimeout(() => {
+// 		notify.render({
+// 			style: "asdavsdf",
+// 			// head: "Hello!",
+// 			content: "A simple success alert—check it out!"
+// 		});
+// 	}, 1000);
+// });
+	
+
+	
+</script>
+</body>
+</html>
