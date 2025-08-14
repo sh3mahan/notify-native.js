@@ -103,7 +103,10 @@ Add the following classes and properties to your project's stylesheet:
 .alert-custom .closeBtn {
   background-color: var(--custom-bg-btn-color);
   color:  var(--custom-text-color);
-} 
+}  
+.alert-custom .closeBtn > svg > path {
+  fill: var(--custom-text-color);
+}
 .alert-custom .ctaBtn {
   background-color: var(--custom-bg-btn-color);
   color:  var(--custom-text-color);
