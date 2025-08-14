@@ -1,0 +1,28 @@
+:root {
+  --custom-bg-color: rgb(46, 66, 80);
+  --custom-bg-btn-color: rgba(23, 40, 52, 0.85);
+  --custom-text-color: rgb(175, 204, 224);
+}
+
+.alert-custom {
+  background-color: var(--custom-bg-color);
+  color:  var(--custom-text-color);
+}
+.alert-custom .closeBtn {
+  background-color: var(--custom-bg-btn-color);
+  color:  var(--custom-text-color);
+}   
+.alert-custom .closeBtn > svg {
+  width: 16px;
+  height: 16px;
+}
+.alert-custom .closeBtn > svg > path {
+  fill: var(--custom-text-color);
+}
+.alert-custom .ctaBtn {
+  background-color: var(--custom-bg-btn-color);
+  color:  var(--custom-text-color);
+}
+.alert-custom a {
+  color: var(--custom-text-color);
+}
